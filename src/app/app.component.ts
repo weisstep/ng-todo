@@ -10,7 +10,9 @@ import { ItemComponent } from "./item/item.component";
   styleUrl: './app.component.css',
   imports: [CommonModule, ItemComponent],
 })
+
 export class AppComponent {
+
   componentTitle = "My To Do List";
 
   filter: "all" | "active" | "done" = "all";
