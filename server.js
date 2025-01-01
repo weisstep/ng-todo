@@ -5,7 +5,7 @@ const port = 3000;
 
 app.use(cors()); // enable cors
 app.get('/', (req, res) => {
-  res.send('Hello from Express!');
+  res.json({ message: 'Hello from Express!'});
 });
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
